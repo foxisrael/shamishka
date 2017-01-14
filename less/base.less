@@ -1,0 +1,91 @@
+//body
+
+html {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "opensans", "Arial", sans-serif;
+  margin: 0 auto;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h2 {
+  font-family: @font-family-light;
+  font-size: @font-size-h2;
+  font-weight: 200;
+  color: @color-darkblue;
+}
+
+h3 {
+  font-size: @font-size-h3;
+  font-family: @font-family-bold;
+  font-weight: bold;
+}
+
+p {
+  font-size: @font-size-basic;
+  line-height: @line-height-basic;
+  margin: 0;
+  color: #444;
+}
+
+a {
+  font-family: @font-family-bold;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: 0;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.clearfix::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media (min-width: 700px) {
+  .wrapper {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+}
+@media (min-width: 960px) {
+  .wrapper {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
